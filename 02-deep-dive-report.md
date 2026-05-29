@@ -1,6 +1,10 @@
 
 # DEEP-DIVE REPORT — VINMEC AI EMR ASSISTANT
 
+### Member:
+Đỗ Đức Anh 2A202600976
+Đàm Xuân Giáp 2A202600740
+
 ## 1. Quyết định lựa chọn bài toán
 
 ### Bài toán được chọn
