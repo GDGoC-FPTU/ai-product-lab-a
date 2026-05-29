@@ -6,6 +6,7 @@ import importlib.util
 import re
 
 # Đảm bảo mã hóa UTF-8 cho stdout trên mọi nền tảng
+
 if sys.stdout.encoding != 'utf-8':
     try:
         import io
@@ -427,3 +428,14 @@ def run_autograder():
 
 if __name__ == "__main__":
     run_autograder()
+import sys
+from typing import Any
+
+if sys.stdout.encoding != 'utf-8':
+    try:
+        if hasattr(sys.stdout, 'reconfigure'):
+            sys.stdout.reconfigure(encoding='utf-8')
+        if hasattr(sys.stderr, 'reconfigure'):
+            sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
